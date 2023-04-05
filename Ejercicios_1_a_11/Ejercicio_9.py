@@ -6,3 +6,8 @@ cadena= input("Introduce una cadena de caracteres")
 palabra= input("Introduce la palabra a reemplazar")
 palabraReemplazo= input("Introduce una palabra para remplazar")
 
+# Con var = cadena.replace(palabra,palabraReemplazo se puede remplazar todas la concurrencias si usar un bucle while
+while palabra in cadena:
+    cadena = cadena.replace(palabra, palabraReemplazo)
+
+print(cadena)
